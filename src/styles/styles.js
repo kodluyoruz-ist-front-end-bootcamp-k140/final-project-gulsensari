@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import {motion} from 'framer-motion'
-import { NavLink } from 'react-router-dom'
+import { NavLink,Link } from 'react-router-dom'
 
 export const Wrapper = styled.div`
 margin: 4rem 0rem;
@@ -149,4 +149,21 @@ cursor:pointer;
 `
 export const Info = styled.div`
 margin-left:5rem;
+`
+
+export const Logo = styled(Link)`
+text-decoration:none;
+font-size:2.2rem;
+font-weight:500;
+font-family:'Lobster Two', cursive;
+
+`
+export const Nav = styled.div`
+padding:4rem 0rem;
+display:flex;
+justify-content:flex-start;
+align-items:center;
+svg{
+  font-size:2rem; 
+}
 `
